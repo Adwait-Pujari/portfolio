@@ -1,0 +1,10 @@
+.banner{
+    padding-top: 15%;
+}
+
+.Profile_picture {
+    border-radius: 50%; 
+    width: 18rem; 
+    height: 18rem; 
+    object-fit: cover; 
+  }

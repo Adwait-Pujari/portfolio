@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.project{
+    padding-top: 15%;
+}
+
+.card{
+    margin-bottom: 5%;
+}
+
+.card:hover{
+    cursor: pointer;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+.card-title {
+    font-weight: bold;
+    font-size: 1.25rem; 
+  }
+
+.card-text {
+font-size: 1rem; 
+}
+  
+
+.card {
+border: 1px solid #ddd; 
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+  
+
+.card-img-top {
+max-height: 200px; /* Limit the image height */
+object-fit: cover; /* Maintain aspect ratio */
+}

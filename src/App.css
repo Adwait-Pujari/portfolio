@@ -5,6 +5,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 html{
@@ -20,12 +21,19 @@ body{
   background-color: #121212 !important;
   color: white !important;
   font-family: 'Open Sans', sans-serif;
+  background-image: url('images/bg_pic.jpg');
+  background-repeat: no-repeat;
 }
 
 h1, h2, h3{
   padding: 0;
   margin: 0;
   line-height: normal;
+  font-family: 'Open Sans', sans-serif;
+}
+
+p{
+  font-family: 'Open Sans', sans-serif;
 }
 
 .App {

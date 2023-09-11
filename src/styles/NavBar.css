@@ -8,6 +8,7 @@ nav.navbar {
   top: 0;
   z-index: 10;
   transition: background-color 0.3s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
 }
 
 nav.navbar.scrolled {
