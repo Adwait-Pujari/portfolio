@@ -49,3 +49,6 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 ## Using libraries like 
 React side click 
 React circular progressbar
+Node Mailer (API for submitting the email in contact info)
+    Along with Nodemailer installed cors and express for protecting server from security vulnarabilities.
+Installing dotenv library

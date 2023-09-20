@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 .project{
-    padding-top: 15%;
+    padding-top: 5rem;
+    background-image: url('../images/bg_img.avif');
+    background-size: cover;
+    padding-bottom: 5rem;
 }
 
 .card{

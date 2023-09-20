@@ -48,6 +48,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   width: 50px; 
   height: 50px;  
   border-radius: 50%;
+  border: 2px solid white;
   transition: transform 0.3s ease-in-out;
 }
 

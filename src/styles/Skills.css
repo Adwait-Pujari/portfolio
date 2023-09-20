@@ -1,7 +1,9 @@
 
 .SkillsPage{
-    padding-top: 10%;
-
+    padding-top: 5rem;
+    background-image: url('../images/bg_img.avif');
+    background-size: cover;
+    padding-bottom: 5rem;
 }
 
 h2{

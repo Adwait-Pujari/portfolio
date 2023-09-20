@@ -1,0 +1,69 @@
+.contactSection {
+    background-color: black; 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    padding: 5rem 0; 
+    text-align: center; 
+    color: white; 
+}
+
+.formEntries .px-1 input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    font-size: 16px;
+}
+
+.formEntries .px-1 textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.message-input .px-1 {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    font-size: 16px;
+}
+
+.submitButton {
+    background-color: #007BFF; 
+    color: #fff;
+    border: none;
+    border-radius: 5px; 
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s ease; 
+}
+
+.submitButton:hover {
+    background-color: #0056b3; 
+}
+
+.success-message {
+    color: #28a745; 
+}
+
+.danger-message {
+    color: #dc3545; 
+}
+
+.contact {
+    text-align: center;
+}
+
+/* Contact Me Iamge */
+.ContactMe { 
+    width: 20rem;
+    height: 20rem;
+}
