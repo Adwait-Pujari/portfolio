@@ -36,7 +36,7 @@ const Banner = () => {
                     If you're seeking a tech enthusiast who blends technical expertise with a drive for growth and excellence, let's connect. I'm excited about what the tech world has in store, and I'm eager to contribute and learn.
                 </p>
             </section>
-            <button onClick={() => console.log('Connect')}>
+            <button onClick={() => window.location.href = '#contacts'}>
                 Let's Connect <ArrowRightCircle size={20} />
               </button>
             </div>

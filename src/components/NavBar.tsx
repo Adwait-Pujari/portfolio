@@ -7,6 +7,7 @@ import navicon1 from '../images/github_logo.png';
 import navicon2 from '../images/linkedIn_logo.png';
 import '../styles/NavBar.css';
 
+
 function NavBar() {
   
   const [activeLink, setActiveLink] = useState('home');
@@ -56,7 +57,7 @@ function NavBar() {
                 </a>
               </div>
               <div>
-                <button className='xyz' onClick={() => console.log('connect')}> 
+                <button  onClick={() => window.location.href = '#contacts'}> 
                   <span> Connect Me </span> 
                 </button>
               </div>

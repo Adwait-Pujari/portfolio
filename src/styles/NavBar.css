@@ -98,6 +98,7 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   z-index: -1;
   transition: 0.3s ease-in-out;
 }
+
 .navbar-text button:hover {
   color: #121212;
 }

@@ -45,9 +45,9 @@ const Contact = () => {
   }
 
   return (
-    <div className='contact contactSection'>
+    <div className='contact contactSection' id='contacts'>
         <Container className='contactContainer'>
-            <h2> Contact Me</h2>
+            <h2><b> Contact Me </b></h2>
             <Row className='align-items-center'>
                 <Col md={6}>
                     <img src ={ContactMe} alt="Contact Us" className='ContactMe' />

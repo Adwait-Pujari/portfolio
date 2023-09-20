@@ -6,20 +6,20 @@
 }
   
   .banner-container {
-    background-image: linear-gradient(to left, #000000, #333333);;
-    background-color: #f0f0f0; /* Background color for the box */
-    border-radius: 25px; /* Adjust the border-radius to control the curve */
-    padding: 2rem; /* Padding inside the box */
+    background-image: linear-gradient(to left, #000000, #333333);
+    background-color: #f0f0f0;
+    border-radius: 25px;
+    padding: 2rem; 
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     text-align: center;
-    box-sizing: border-box; /* Ensure box-sizing applies to the container */
-    margin: 0 auto; /* Center the container horizontally */
-    max-width: 1200px; /* Set a maximum width for the container */
-    background-color: black; /* Change background color to black */
-    color: white; /* Change text color to white */
+    box-sizing: border-box;
+    margin: 0 auto; 
+    max-width: 1200px; 
+    background-color: black; 
+    color: white; 
   }
   
   .left-content {
@@ -59,7 +59,7 @@
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    background-image: linear-gradient(to right, #008080, #000080);
+    background-image: linear-gradient(to bottom, #1a5b2a, #6b8e23);
   }
   
   button:hover {

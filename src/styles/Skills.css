@@ -17,7 +17,7 @@ h2{
 }
 
 .progressBar{
-    margin: 0 20px;
+    margin: 2rem;
     text-align: center;
 }
 
@@ -29,6 +29,7 @@ h2{
 .skillName{
     font-size: 20px;
     font-weight: 400;
+    margin-top: 2rem;
 }
 
 .sliderCustomArrows{
@@ -37,6 +38,7 @@ h2{
     border: none;
     transition: background-color 0.3 ease;
     cursor: pointer;
+    color: #000;
 }
 
 .sliderCustomArrows:hover{
