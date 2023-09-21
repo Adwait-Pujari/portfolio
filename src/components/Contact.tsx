@@ -44,11 +44,10 @@ const Contact = () => {
         setFormDetails(formInitialDetails);
         setStatus({ success: true, message: 'Message Sent successfully' });
       } else {
-        // Request failed (e.g., server error or network issue)
+        // Request failed 
         setStatus({ success: false, message: 'Something went wrong, please try again' });
       }
     } catch (error) {
-      // Handle network errors or unexpected exceptions
       console.error(error);
       setStatus({ success: false, message: 'Server is inactive. Please try again later.' });
     }
