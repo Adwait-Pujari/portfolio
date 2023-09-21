@@ -1,45 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
-.project{
-    padding-top: 5rem;
-    background-image: url('../images/bg_img.avif');
-    background-size: cover;
-    padding-bottom: 5rem;
+.project {
+  padding-top: 5rem;
+  background-image: url('../images/bg_img.avif');
+  background-size: cover;
+  padding-bottom: 5rem;
 }
 
-.card{
-    margin-bottom: 5%;
+.card {
+  margin-bottom: 5%;
+  border: 1px solid #000;
+  height: 500px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
 }
 
-.card:hover{
-    cursor: pointer;
+.card:hover {
+  cursor: pointer;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
 }
 
-body{
-    font-family: 'Open Sans', sans-serif;
+body {
+  font-family: 'Open Sans', sans-serif;
 }
 
-h2{
-    margin-bottom: 20px;
+h2 {
+  margin-bottom: 20px;
 }
 
 .card-title {
-    font-weight: bold;
-    font-size: 1.25rem; 
-  }
+  font-weight: bold;
+  font-size: 1.25rem;
+}
 
 .card-text {
-font-size: 1rem; 
+  font-size: 1rem;
 }
-  
-
-.card {
-border: 1px solid #ddd; 
-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
-}
-  
 
 .card-img-top {
-max-height: 200px;
-object-fit: cover;
+  max-height: 200px;
+  object-fit: cover;
 }

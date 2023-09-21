@@ -58,7 +58,7 @@ function NavBar() {
               </div>
               <div>
                 <button  onClick={() => window.location.href = '#contacts'}> 
-                  <span> Connect Me </span> 
+                  <span> Contact Me </span> 
                 </button>
               </div>
           </span>

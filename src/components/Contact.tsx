@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
-import ContactMe  from '../images/Contact_me.jpg';
+import ContactMe  from '../images/contactMe_img.png';
 import  '../styles/Contact.css';
 
 const Contact = () => {
