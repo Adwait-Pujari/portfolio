@@ -23,7 +23,7 @@ const Banner = () => {
                     Dedicated Computer Science Co-op Honors student at the University of Manitoba, currently in my third year with a minor in mathematics.
                     </li>
                     <li>
-                    Passionate about innovation and eager to learn. Experienced in coding intricate algorithms and collaborating effectively in team projects.
+                    Passionate about innovation and eager to learn. Experienced in coding algorithms and collaborating effectively in team projects.
                     </li>
                     <li>
                     Known for strong work ethics, professionalism, and unwavering commitment to excellence.
