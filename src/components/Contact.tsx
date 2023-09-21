@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { Col, Container, Row } from 'react-bootstrap';
 import ContactMe  from '../images/contactMe_img.png';
 import  '../styles/Contact.css';
+const nodemailer = require('nodemailer');
 
 const Contact = () => {
 
@@ -23,19 +24,53 @@ const Contact = () => {
         [category]: value
     })
   }
+  const transporter = nodemailer.createTransport({
+    service: 'gmail',
+    
+    auth: {
+        user: "adwaitpujari08@gmail.com",
+        pass: "boaz szwa asmf owon"
+    },
+    });
+    transporter.verify((error: any) => {
+        if (error) {
+          console.log(error);
+        } else {
+          console.log("Ready to Send");
+        }
+      });
+    
+    
+    const sendEmail = ({firstName, lastName, email, phone, message}: {firstName: string, lastName: string, email: string, phone: string, message: string}) => {
+        const name = firstName + " " + lastName;
+        let retMsg;
+        const mail = {
+            from: name,
+            to: "adwaitpujari08@gmail.com",
+            subject: "Portfolio Contact Form",
+            html: `<p> I am <b>${name}</b> and i want to connect you, 
+            this is my email ${email} and my contact info ${phone}. </p>
+            <p>Here is  my text message</p>
+            <p> ${message} </p>`
+        };
+        retMsg = { message: 'Email sent successfully!' };
+        transporter.sendMail(mail, (error: any) => {
+            if (error) {
+                retMsg = { code: 404, status: "Error sending email" };
+            } else {
+                retMsg = { code: 200, status: "Message Sent" };
+            }
+        });
+        return retMsg;
+    };
 
   const handleSubmit = async (e: any) =>{
     e.preventDefault();
     setButtonText('Please Wait a min');
-    let response = await fetch("http://localhost:5000/contact", {
-        method: "POST",
-        headers: {
-            "Content-Type": "Application/json;charset=utf-8",
-        },
-        body: JSON.stringify(formDetails),
-    });
+    let response =  sendEmail(formDetails);
     setButtonText('Send');
-    let result = await response.json();
+    // convert response to json
+    let result = JSON.parse(JSON.stringify(response));
     setFormDetails(formInitialDetails);
     if (result.error) {
         setStatus({ success: false, message: 'Something went wrong, please try again' });
