@@ -17,6 +17,7 @@ const Contact = () => {
   const [buttonText, setButtonText] = useState('Send');
   const [status, setStatus] = useState({success: false, message: '' });
 
+
   const onFormUpdate = (category: any, value: any) => {
     setFormDetails({
         ...formDetails,
@@ -24,24 +25,35 @@ const Contact = () => {
     })
   }
 
-  const handleSubmit = async (e: any) =>{
+  const handleSubmit = async (e: any) => {
     e.preventDefault();
     setButtonText('Please Wait a min');
-    let response = await fetch("http://localhost:5000/contact", {
+  
+    try {
+      let response = await fetch("http://localhost:5000/contact", {
         method: "POST",
         headers: {
-            "Content-Type": "Application/json;charset=utf-8",
+          "Content-Type": "Application/json;charset=utf-8",
         },
         body: JSON.stringify(formDetails),
-    });
-    setButtonText('Send');
-    let result = await response.json();
-    setFormDetails(formInitialDetails);
-    if (result.error) {
-        setStatus({ success: false, message: 'Something went wrong, please try again' });
-    } else {
+      });
+  
+      if (response.ok) {
+        // Request was successful
+        let result = await response.json();
+        setFormDetails(formInitialDetails);
         setStatus({ success: true, message: 'Message Sent successfully' });
+      } else {
+        // Request failed (e.g., server error or network issue)
+        setStatus({ success: false, message: 'Something went wrong, please try again' });
+      }
+    } catch (error) {
+      // Handle network errors or unexpected exceptions
+      console.error(error);
+      setStatus({ success: false, message: 'Server is inactive. Please try again later.' });
     }
+  
+    setButtonText('Send');
   }
 
   return (

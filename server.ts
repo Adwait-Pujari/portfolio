@@ -13,7 +13,6 @@ app.listen(5000, () => {
     console.log("Server is running on port 5000");
 });
 
-console.log(process.env.EMAIL_PASS);
 const transporter = nodemailer.createTransport({
 service: 'gmail',
 
