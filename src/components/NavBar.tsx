@@ -4,7 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import navicon1 from '../images/github_logo.png';
-import navicon2 from '../images/linkedIn_logo.png';
+import navicon2 from '../images/linked_logo.png';
 import '../styles/NavBar.css';
 
 
@@ -49,10 +49,10 @@ function NavBar() {
           </Nav>
           <span className="navbar-text">
               <div className="social-icon">
-                <a href="https://github.com/Adwait-Pujari"> 
+                <a href="https://github.com/Adwait-Pujari" target="_blank" rel="noopener noreferrer"> 
                   <img src={navicon1} alt="GitHub Logo" /> 
                 </a>
-                <a href="https://www.linkedin.com/in/adwait-pujari">
+                <a href="https://www.linkedin.com/in/adwait-pujari" target="_blank" rel="noopener noreferrer">
                   <img src={navicon2} alt="LinkedIn Logo" /> 
                 </a>
               </div>
