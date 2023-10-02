@@ -38,7 +38,7 @@ const Contact = () => {
       });
       if (response.ok) {
         // Request was successful
-        let result = await response.json();
+        //let result = await response.json();
         setFormDetails(formInitialDetails);
         setStatus({ success: true, message: 'Message Sent successfully' });
       } else {
